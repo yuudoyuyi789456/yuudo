@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, sinitial-scale=1">
+        <base href="Base.html">
+        <link rel="stylesheet" href="Form.css">
+        <title>Negroni</title>
+        <script type="text/javascript" src="to_top.js" charset="UTF-8"></script>
+        <script type="text/javascript">
+        window.onload=function()
+        {
+            var oBtn1=document.getElementById("btn1");
+            var content=document.getElementById("navbar");
+            var n=0;
+            oBtn1.onclick=function()
+            {
+                content.style.display= 'none';
+                if(n%2==0)
+                {
+                    oBtn1.style.backgroundColor = 'red';
+                    content.style.display = 'grid';
+                }
+                else
+                {
+                    oBtn1.style.backgroundColor = '#86160c';
+                    content.style.display= 'none';
+                }
+                n++;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <p id="header_p">IN & WA's Bar&#x1F942</p>
+                <nav>
+                    <ul>
+                        <li><a href="main.html">首頁</a></li>
+                    </ul>
+                    <ul class="ul_oc">
+                        <li><a href="Base.html">基酒</a></li>
+                        <li><a href="Cocktail.html">調酒</a></li>
+                        <li><a href="Coffee.html">咖啡</a></li>
+                        <li><a href="Food.html">料理</a></li>
+                    </ul>
+                    <button type="button" id="btn1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </nav>
+            </header>
+            <article>
+                <ul id="navbar" style="position: absolute;top: 0px;right: 0px; background-color: rgba(126, 125, 125, 0.9);display: none;z-index: 2;">
+                    <li><a href="Base.html">基酒</a></li>
+                    <li><a href="Cocktail.html">調酒</a></li>
+                    <li><a href="Coffee.html">咖啡</a></li>
+                    <li><a href="Food.html">料理</a></li>
+                </ul>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">簡介</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        Negroni屬於重酒感系的調酒，味道以甜、苦為主要基調。
+                        甜味來源是甜苦艾酒（Sweet Vermouth ）、苦味來源則是金巴利酒（Campari），再加上琴酒（Gin），
+                        用攪拌法以1:1:1的黃金比例調製而成。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">由來</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        經典調酒Negroni具有悠久的歷史，據說由來是1919年時，從美國回到義大利佛羅倫斯的卡米洛．內格羅
+                        尼伯爵（Count Camillo Negroni）要求酒保將另一杯經典調酒美國佬 （Americano）加以變化，以琴
+                        酒替代蘇打水。之後便形成了以等量的琴酒（Gin）、金巴利酒（Campari）、甜苦艾酒（Sweet Vermouth）
+                        加入冰塊攪拌而成的經典酒款。進而衍生出許許多多的變化版本，受到全世界消費者的推崇與歡迎。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">配方</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        <div class="mtrl_htmk">
+                            <div class="pd_mtrl_ct">
+                                琴酒30ml<br>
+                                甜苦艾酒30ml<br>
+                                金巴利酒30ml<br>
+                                橙皮1片&#x1F34A<br>
+                                冰塊&#x1F9CA
+                            </div>
+                            <div class="pd_htmk_ct">
+                                1. 在填滿冰塊的舊式酒杯裡，加入以上所有的材料。<br><br>
+                                2. 輕輕的攪拌。<br><br>
+                                3. 攪拌均勻後，在酒杯上插上半片橘子片作為裝飾。
+                                
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </article>
+            <footer>
+                <p style="padding: 10px;">Copyright © 瑛維吧 2020 all right reserved | Powered by NUTC</p>
+            </footer>
+        </div>
+    </body>
+</html>
