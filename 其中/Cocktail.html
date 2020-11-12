@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, sinitial-scale=1">
+        <link rel="stylesheet" href="Form.css">
+        <title>調酒</title>
+        <script type="text/javascript" src="to_top.js" charset="UTF-8"></script>
+        <script type="text/javascript">
+        window.onload=function()
+        {
+            var oBtn1=document.getElementById("btn1");
+            var content=document.getElementById("navbar");
+            var n=0;
+            oBtn1.onclick=function()
+            {
+                content.style.display= 'none';
+                if(n%2==0)
+                {
+                    oBtn1.style.backgroundColor = 'red';
+                    content.style.display = 'grid';
+                }
+                else
+                {
+                    oBtn1.style.backgroundColor = '#86160c';
+                    content.style.display= 'none';
+                }
+                n++;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <p id="header_p">IN & WA's Bar&#x1F942</p>
+                <nav>
+                    <ul>
+                        <li><a href="main.html">首頁</a></li>
+                    </ul>
+                    <ul class="ul_oc">
+                        <li><a href="Base.html">基酒</a></li>
+                        <li><a href="Cocktail.html">調酒</a></li>
+                        <li><a href="Coffee.html">咖啡</a></li>
+                        <li><a href="Food.html">料理</a></li>
+                    </ul>
+                    <button type="button" id="btn1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </nav>
+            </header>
+            <article class="right_width">
+                <ul id="navbar" style="position: absolute;top: 0px;right: 0px; background-color: rgba(126, 125, 125, 0.9);display: none;z-index: 2;">
+                    <li><a href="Base.html">基酒</a></li>
+                    <li><a href="Cocktail.html">調酒</a></li>
+                    <li><a href="Coffee.html">咖啡</a></li>
+                    <li><a href="Food.html">料理</a></li>
+                </ul>
+                <div style="width: 100%;height: auto;display: flex;flex-wrap: wrap;">
+                    <div class="pd_main">
+                        <div class="pd_main_left">
+                            <img src="media/Mojito.jpg" class="product_img_block"> <!--理論上你的電腦看不到這個圖片也沒辦法超連結 如果下面其他產品你要放圖片 圖片要跟Cocktail.html放在一起-->
+                        </div>
+                        <div class="pd_main_right">
+                            <a href="Mojito.html" class="main_Cocktail"><p>Mojito</p></a>
+                            清涼系飲品的不敗經典<br>
+                            夏日中熱門的雞尾酒之一<br>
+                            酸甜口感，是女生們絕對會喜歡的!&#x1F60B <!--名稱就是超連結-->
+                        </div>
+                    </div>
+                    <div class="pd_main">
+                        <div class="pd_main_left">
+                            <img src="media/Negroni.jpg" class="product_img_block"> <!--圖片跟Cocktail.html放在一起-->
+                        </div>
+                        <div class="pd_main_right">
+                            <a href="Negroni.html" class="main_Cocktail"><p>Negroni</p></a>
+                            別在那個弄你!<br>
+                            甘與苦的黃金比例<br>
+                            酒吧男士必喝之一 &#x1F44D&#x1F44D<!--名稱就是超連結-->
+                        </div>
+                    </div>
+                    <div class="pd_main">
+                        <div class="pd_main_left">
+                            <img src="media/Old Fashioned.jpg" class="product_img_block"> <!--圖片跟Cocktail.html放在一起-->
+                        </div>
+                        <div class="pd_main_right">
+                            <a href="Old Fashioned.html" class="main_Cocktail"><p>Old Fashioned</p></a>
+                            往日情懷<br>
+                            最為經典的古典<br>
+                            <span style=font-size:20px;>&#8618</span>威士忌經典調酒<br>
+                            一杯世界上最頑固的酒 <!--名稱就是超連結-->
+                        </div>
+                    </div>
+                    <div class="pd_main">
+                        <div class="pd_main_left">
+                            <img src="media/Whiskey Sour.jpg" class="product_img_block"> <!--理論上你的電腦看不到這個圖片也沒辦法超連結 如果下面其他產品你要放圖片 圖片要跟Cocktail.html放在一起-->
+                        </div>
+                        <div class="pd_main_right">
+                            <a href="Whiskey Sour.html" class="main_Cocktail"><p>Long Island Iced Tea</p></a>
+                            趕進度的最佳夥伴<br>
+                            這杯根本沒有茶的酒，打著「冰茶」的名號在酒吧界大紅大紫了幾十年&#x1F608 <!--名稱就是超連結-->
+                        </div>
+                    </div>
+                <div style="clear: both;"></div>
+            </article>
+            <footer>
+                <p style="padding: 10px;">Copyright © 瑛維吧 2020 all right reserved | Powered by NUTC</p>
+            </footer>
+        </div>
+    </body>
+</html>
