@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, sinitial-scale=1">
+        <base href="Base.html">
+        <link rel="stylesheet" href="Form.css">
+        <title>Old Fashioned</title>
+        <script type="text/javascript" src="to_top.js" charset="UTF-8"></script>
+        <script type="text/javascript">
+        window.onload=function()
+        {
+            var oBtn1=document.getElementById("btn1");
+            var content=document.getElementById("navbar");
+            var n=0;
+            oBtn1.onclick=function()
+            {
+                content.style.display= 'none';
+                if(n%2==0)
+                {
+                    oBtn1.style.backgroundColor = 'red';
+                    content.style.display = 'grid';
+                }
+                else
+                {
+                    oBtn1.style.backgroundColor = '#86160c';
+                    content.style.display= 'none';
+                }
+                n++;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <p id="header_p">IN & WA's Bar&#x1F942</p>
+                <nav>
+                    <ul>
+                        <li><a href="main.html">首頁</a></li>
+                    </ul>
+                    <ul class="ul_oc">
+                        <li><a href="Base.html">基酒</a></li>
+                        <li><a href="Cocktail.html">調酒</a></li>
+                        <li><a href="Coffee.html">咖啡</a></li>
+                        <li><a href="Food.html">料理</a></li>
+                    </ul>
+                    <button type="button" id="btn1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </nav>
+            </header>
+            <article>
+                <ul id="navbar" style="position: absolute;top: 0px;right: 0px; background-color: rgba(126, 125, 125, 0.9);display: none;z-index: 2;">
+                    <li><a href="Base.html">基酒</a></li>
+                    <li><a href="Cocktail.html">調酒</a></li>
+                    <li><a href="Coffee.html">咖啡</a></li>
+                    <li><a href="Food.html">料理</a></li>
+                </ul>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">簡介</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        古典是一杯用搗棒混合方糖和苦酒，並且加入威士忌或者在不常見做法中加入白蘭地，
+                        之後用扭過的橘子或馬拉斯奇諾櫻桃點綴的雞尾酒。
+
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">由來</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        大約一百多年前就已經有人開始喝 Old Fashioned 了，只是當時還沒有幫這杯酒決定好名字，所以也衍生出
+                        「Old Fashioned 不是一杯調酒，而是一種做法」這樣的說法。讓我們將時間倒回至十九世紀初，也許就能理
+                        解這杯酒為什麼會變成調酒的起源了。早期製瓶技術尚未普及化，也沒有物流業者幫 Bar 進行今日下單明日到
+                        貨的高效率服務，因此只能以最傳統的方式，利用馬車運輸一桶又一桶的波本威士忌或裸麥威士忌的「原酒」到
+                        酒吧。因為原酒的口味不穩定且酒精濃度非常高，於是以前的人才會想到可以加點糖或是苦精來掩蓋刺鼻的味道
+                        與辛辣的口感，也因此成為了調酒的起點。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">配方</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        <div class="mtrl_htmk">
+                            <div class="pd_mtrl_ct">
+                                威士忌45 ml<br>
+                                苦精2 dashes<br>
+                                方糖1顆<br>
+                                橙皮1片&#x1F34A<br>
+                                蘇打水少許<br>
+                                冰塊&#x1F9CA
+                            </div>
+                            <div class="pd_htmk_ct">
+                                1.把方糖放入古典杯中<br><br>
+                                2.將苦精滴在方糖上並壓碎，加入蘇打水或水攪拌至完全溶解<br><br>
+                                3.放入冰塊，注入威士忌<br><br>
+                                4.噴上橙皮油並投入皮捲
+                                
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </article>
+            <footer>
+                <p style="padding: 10px;">Copyright © 瑛維吧 2020 all right reserved | Powered by NUTC</p>
+            </footer>
+        </div>
+    </body>
+</html>
