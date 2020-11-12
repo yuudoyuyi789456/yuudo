@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, sinitial-scale=1">
+        <base href="Base.html">
+        <link rel="stylesheet" href="Form.css">
+        <title>Latte</title>
+        <script type="text/javascript" src="to_top.js" charset="UTF-8"></script>
+        <script type="text/javascript">
+        window.onload=function()
+        {
+            var oBtn1=document.getElementById("btn1");
+            var content=document.getElementById("navbar");
+            var n=0;
+            oBtn1.onclick=function()
+            {
+                content.style.display= 'none';
+                if(n%2==0)
+                {
+                    oBtn1.style.backgroundColor = 'red';
+                    content.style.display = 'grid';
+                }
+                else
+                {
+                    oBtn1.style.backgroundColor = '#86160c';
+                    content.style.display= 'none';
+                }
+                n++;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <p id="header_p">IN & WA's Bar&#x1F942</p>
+                <nav>
+                    <ul>
+                        <li><a href="main.html">首頁</a></li>
+                    </ul>
+                    <ul class="ul_oc">
+                        <li><a href="Base.html">基酒</a></li>
+                        <li><a href="Cocktail.html">調酒</a></li>
+                        <li><a href="Coffee.html">咖啡</a></li>
+                        <li><a href="Food.html">料理</a></li>
+                    </ul>
+                    <button type="button" id="btn1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </nav>
+            </header>
+            <article>
+                <ul id="navbar" style="position: absolute;top: 0px;right: 0px; background-color: rgba(126, 125, 125, 0.9);display: none;z-index: 2;">
+                    <li><a href="Base.html">基酒</a></li>
+                    <li><a href="Cocktail.html">調酒</a></li>
+                    <li><a href="Coffee.html">咖啡</a></li>
+                    <li><a href="Food.html">料理</a></li>
+                </ul>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">簡介</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        可用牛奶繪製很多花樣，泡沫少，濃濃的奶油香。如果說卡布奇諾(Cappuccino)是牛奶泡沫和咖啡的混合，拿鐵（Latte）是牛奶和咖啡的混合。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">由來</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        拿鐵咖啡的起源牛奶加咖啡的Caffe'Latte。雖是義大利文，但這種飲料卻不是義大利人發明的，拿鐵的源頭可溯自土耳其鄂圖曼帝國與維也納的戰爭。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">配方</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        <div class="mtrl_htmk">
+                            <div class="pd_mtrl_ct">
+                                義式濃縮咖啡一小杯<br>
+                                牛奶150-200ml<br>
+                            </div>
+                            <div class="pd_htmk_ct">
+                                1.先倒義式濃縮咖啡30%，再倒入70%牛奶，中間用小棍劃一下，漂亮的心型就出來了。<br><br>
+                                2.可根據自己的本領，畫出很多不同的圖案。
+                                
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </article>
+            <footer>
+                <p style="padding: 10px;">Copyright © 瑛維吧 2020 all right reserved | Powered by NUTC</p>
+            </footer>
+        </div>
+    </body>
+</html>
