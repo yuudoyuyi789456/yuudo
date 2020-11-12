@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, sinitial-scale=1">
+        <base href="Base.html">
+        <link rel="stylesheet" href="Form.css">
+        <title>Mojito</title>
+        <script type="text/javascript" src="to_top.js" charset="UTF-8"></script>
+        <script type="text/javascript">
+        window.onload=function()
+        {
+            var oBtn1=document.getElementById("btn1");
+            var content=document.getElementById("navbar");
+            var n=0;
+            oBtn1.onclick=function()
+            {
+                content.style.display= 'none';
+                if(n%2==0)
+                {
+                    oBtn1.style.backgroundColor = 'red';
+                    content.style.display = 'grid';
+                }
+                else
+                {
+                    oBtn1.style.backgroundColor = '#86160c';
+                    content.style.display= 'none';
+                }
+                n++;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <p id="header_p">IN & WA's Bar&#x1F942</p>
+                <nav>
+                    <ul>
+                        <li><a href="main.html">首頁</a></li>
+                    </ul>
+                    <ul class="ul_oc">
+                        <li><a href="Base.html">基酒</a></li>
+                        <li><a href="Cocktail.html">調酒</a></li>
+                        <li><a href="Coffee.html">咖啡</a></li>
+                        <li><a href="Food.html">料理</a></li>
+                    </ul>
+                    <button type="button" id="btn1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </nav>
+            </header>
+            <article>
+                <ul id="navbar" style="position: absolute;top: 0px;right: 0px; background-color: rgba(126, 125, 125, 0.9);display: none;z-index: 2;">
+                    <li><a href="Base.html">基酒</a></li>
+                    <li><a href="Cocktail.html">調酒</a></li>
+                    <li><a href="Coffee.html">咖啡</a></li>
+                    <li><a href="Food.html">料理</a></li>
+                </ul>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">簡介</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        Mojito是一種傳統的古巴高球雞尾酒。傳統上，Mojito是一種由五種材料製成的雞尾酒：淡蘭姆酒
+                        、白砂糖、青檸汁、蘇打水和薄荷。最原始的古巴配方是使用留蘭香或古巴島上常見的檸檬薄荷。
+                        萊姆與薄荷的清爽口味是為了與蘭姆酒的烈性相互補，同時也使得這種透明無色的調酒成為夏日的
+                        熱門飲料之一。這種調酒有著相對低的酒精含量。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">由來</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        莫西多（Mojito）這一名稱的由來也有許多種說法，其中一種說法是來自古巴的莫侯醬，是一種用萊姆做成的調味醬汁
+                        ；另外一種說法則是源自西班牙文中mojadito或mojado的衍生詞；但華語地區懂西班牙語的人相對較少，因此常以英語
+                        發音將其錯譯為「莫西多」。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">配方</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        <div class="mtrl_htmk">
+                            <div class="pd_mtrl_ct">
+                                蘭姆酒 40ml<br>
+                                檸檬 半顆&#x1F34B<br>
+                                新鮮薄荷葉 1把&#x1F33F<br>
+                                砂糖 1/2湯匙<br>
+                                雪碧 150ml<br>
+                                碎冰塊&#x1F9CA
+                            </div>
+                            <div class="pd_htmk_ct">
+                                1.首先將薄荷葉放在掌心拍一下，讓薄荷的味道散發一些，然後投入到高球杯中。加入蘭姆酒、檸檬汁、砂糖與一些蘇打水。<br><br>
+                                2.拿出搗棒邊搗薄荷邊攪拌，讓糖溶解；這時候要注意，不要把薄荷搗爛，不然會有苦味，而且薄荷會變黑，看起來賣像會比較差。<br><br>
+                                3.加入冰塊再到滿蘇打水，插上一小株薄荷。
+                                
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </article>
+            <footer>
+                <p style="padding: 10px;">Copyright © 瑛維吧 2020 all right reserved | Powered by NUTC</p>
+            </footer>
+        </div>
+    </body>
+</html>
