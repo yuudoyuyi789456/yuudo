@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, sinitial-scale=1">
+        <base href="Base.html">
+        <link rel="stylesheet" href="Form.css">
+        <title>Caramel Macchiato</title>
+        <script type="text/javascript" src="to_top.js" charset="UTF-8"></script>
+        <script type="text/javascript">
+        window.onload=function()
+        {
+            var oBtn1=document.getElementById("btn1");
+            var content=document.getElementById("navbar");
+            var n=0;
+            oBtn1.onclick=function()
+            {
+                content.style.display= 'none';
+                if(n%2==0)
+                {
+                    oBtn1.style.backgroundColor = 'red';
+                    content.style.display = 'grid';
+                }
+                else
+                {
+                    oBtn1.style.backgroundColor = '#86160c';
+                    content.style.display= 'none';
+                }
+                n++;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <p id="header_p">IN & WA's Bar&#x1F942</p>
+                <nav>
+                    <ul>
+                        <li><a href="main.html">首頁</a></li>
+                    </ul>
+                    <ul class="ul_oc">
+                        <li><a href="Base.html">基酒</a></li>
+                        <li><a href="Cocktail.html">調酒</a></li>
+                        <li><a href="Coffee.html">咖啡</a></li>
+                        <li><a href="Food.html">料理</a></li>
+                    </ul>
+                    <button type="button" id="btn1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </nav>
+            </header>
+            <article>
+                <ul id="navbar" style="position: absolute;top: 0px;right: 0px; background-color: rgba(126, 125, 125, 0.9);display: none;z-index: 2;">
+                    <li><a href="Base.html">基酒</a></li>
+                    <li><a href="Cocktail.html">調酒</a></li>
+                    <li><a href="Coffee.html">咖啡</a></li>
+                    <li><a href="Food.html">料理</a></li>
+                </ul>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">簡介</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        不同於摩卡咖啡的厚重，它是輕柔的，如果說摩卡像黑巧克力的話，那麼瑪奇朵就是太妃糖，給人柔柔的溫柔感，而且細膩的奶沫與焦糖結合後，如浮雲般細膩潤滑。所以瑪奇朵通常是女孩子的最愛。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">由來</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        Caramel 是英文里焦糖的意思，而 Machiatto 在義大利文里是「印記、烙印」的意思。顧名思義，它的名字焦糖瑪奇朵就象徵著甜蜜的印記。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">配方</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        <div class="mtrl_htmk">
+                            <div class="pd_mtrl_ct">
+                                義大利咖啡100ml<br>
+                                鮮奶300ml<br>
+                                焦糖膏15ml<br>
+                                焦糖糖漿15ml<br>
+                                500ml量杯
+                            </div>
+                            <div class="pd_htmk_ct">
+                                1.用奶泡壺加鮮奶打成奶泡，攪拌均勻，將義大利咖啡盛入杯中，加入鮮奶及奶泡至全滿。<br><br>
+                                2.在正中央淋入一些焦糖糖漿，奶泡要打到綿密，從正中央倒入杯中，用焦糖膏擠出網狀的圖案。                        
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </article>
+            <footer>
+                <p style="padding: 10px;">Copyright © 瑛維吧 2020 all right reserved | Powered by NUTC</p>
+            </footer>
+        </div>
+    </body>
+</html>
