@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, sinitial-scale=1">
+        <base href="Base.html">
+        <link rel="stylesheet" href="Form.css">
+        <title>Long Island Iced Tea</title>
+        <script type="text/javascript" src="to_top.js" charset="UTF-8"></script>
+        <script type="text/javascript">
+        window.onload=function()
+        {
+            var oBtn1=document.getElementById("btn1");
+            var content=document.getElementById("navbar");
+            var n=0;
+            oBtn1.onclick=function()
+            {
+                content.style.display= 'none';
+                if(n%2==0)
+                {
+                    oBtn1.style.backgroundColor = 'red';
+                    content.style.display = 'grid';
+                }
+                else
+                {
+                    oBtn1.style.backgroundColor = '#86160c';
+                    content.style.display= 'none';
+                }
+                n++;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <p id="header_p">IN & WA's Bar&#x1F942</p>
+                <nav>
+                    <ul>
+                        <li><a href="main.html">首頁</a></li>
+                    </ul>
+                    <ul class="ul_oc">
+                        <li><a href="Base.html">基酒</a></li>
+                        <li><a href="Cocktail.html">調酒</a></li>
+                        <li><a href="Coffee.html">咖啡</a></li>
+                        <li><a href="Food.html">料理</a></li>
+                    </ul>
+                    <button type="button" id="btn1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </nav>
+            </header>
+            <article>
+                <ul id="navbar" style="position: absolute;top: 0px;right: 0px; background-color: rgba(126, 125, 125, 0.9);display: none;z-index: 2;">
+                    <li><a href="Base.html">基酒</a></li>
+                    <li><a href="Cocktail.html">調酒</a></li>
+                    <li><a href="Coffee.html">咖啡</a></li>
+                    <li><a href="Food.html">料理</a></li>
+                </ul>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">簡介</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        長島冰茶（Long Island Iced Tea）雖然裡面有個茶字，但在完全沒有任何茶類的情況下，調製出具有紅茶色澤與口味的
+                        一杯酒。原創作品中加入了四種基酒，分別是伏特加、琴酒、蘭姆酒與龍舌蘭，並透過果汁及可樂的搭配，營造出一種類似
+                        紅茶顏色的效果。不用說，酒精濃度肯定是相當高，原始配方大約落在30%左右，民間流傳自創的各種神奇配方當然就更驚人了。
+
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">由來</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        起源之一的說法為1920年代美國禁酒令期間，酒保將烈酒與可樂混成一杯看似茶的飲品，來鑽法令漏洞；起源之二是據說在
+                        1972年，由長島橡樹灘客棧（Oak Beach Inn）的酒保發明了這種以四種基酒混製出來的飲料。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">配方</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        <div class="mtrl_htmk">
+                            <div class="pd_mtrl_ct">
+                                伏特加 15ml<br>
+                                琴酒 15ml<br>
+                                蘭姆酒 15ml<br>
+                                君度酒 15ml<br>
+                                龍舌蘭 7ml<br>
+                                可樂 60ml<br>
+                                柳橙汁 15ml<br>
+                                檸檬汁 7ml<br>
+                            </div>
+                            <div class="pd_htmk_ct">
+                                1.先將五種酒類按照各比例注入調酒杯，加入少量的冰塊大約三四塊左右，以搖盪法至外頭稍微結霜為止。<br><br>
+                                2.將外表稍微結霜的調酒杯倒出至飲用杯中，再依序將柳橙汁跟可樂注入，稍稍攪拌讓氣泡感消失一些。<br><br>
+                                3.稍稍攪拌讓氣泡消失後，即可注入7ml左右的檸檬汁，酸度跟甜度大致相等又不會過分搶眼即可。
+                                
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </article>
+            <footer>
+                <p style="padding: 10px;">Copyright © 瑛維吧 2020 all right reserved | Powered by NUTC</p>
+            </footer>
+        </div>
+    </body>
+</html>
