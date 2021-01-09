@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, sinitial-scale=1">
+        <base href="Food.html">
+        <link rel="stylesheet" href="Form.css">
+        <title>beef</title>
+        <script type="text/javascript" src="to_top.js" charset="UTF-8"></script>
+        <script type="text/javascript">
+        window.onload=function()
+        {
+            var oBtn1=document.getElementById("btn1");
+            var content=document.getElementById("navbar");
+            var n=0;
+            oBtn1.onclick=function()
+            {
+                content.style.display= 'none';
+                if(n%2==0)
+                {
+                    oBtn1.style.backgroundColor = 'red';
+                    content.style.display = 'grid';
+                }
+                else
+                {
+                    oBtn1.style.backgroundColor = '#86160c';
+                    content.style.display= 'none';
+                }
+                n++;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <p id="header_p">IN & WA's Bar&#x1F942</p>
+                <nav>
+                    <ul>
+                        <li><a href="main.html">首頁</a></li>
+                    </ul>
+                    <ul class="ul_oc">
+                        <li><a href="Base.html">基酒</a></li>
+                        <li><a href="Cocktail.html">調酒</a></li>
+                        <li><a href="Coffee.html">咖啡</a></li>
+                        <li><a href="Food.html">料理</a></li>
+                    </ul>
+                    <button type="button" id="btn1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </nav>
+            </header>
+            <article>
+                <ul id="navbar" style="position: absolute;top: 0px;right: 0px; background-color: rgba(126, 125, 125, 0.9);display: none;z-index: 2;">
+                    <li><a href="Base.html">基酒</a></li>
+                    <li><a href="Cocktail.html">調酒</a></li>
+                    <li><a href="Coffee.html">咖啡</a></li>
+                    <li><a href="Food.html">料理</a></li>
+                </ul>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">簡介</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        清末小說中已出現「牛排」、「豬排」等西菜菜名，可能是因形似上海「大排」（豬丁骨），故名「排」。而在上海話裡，「排」發「ba」音，廣東人聽為「扒」，因此又作牛扒。而英語中表示牛排的「steak」一詞則源自古諾爾斯語詞「steik」，後者意即烤牛肉。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">生熟程度</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                            有別於其他大部份熟食，牛排通常不會煮至全熟，而是可以以個人喜好調較生熟程度。生熟程度以數字（通常是奇整數）區分[2]，主要分為：
+                            全生（Raw）：完全未經烹煮的生牛肉，這種做法只會用在某些菜式例如韃靼牛肉、基特富（Kitfo，衣索比亞菜餚）或生牛肉沙拉。
+                            一分熟（Rare）：僅表面煎熟，呈灰褐色，剖面為血紅色，中心呈寶石紅，核心溫度約48.9℃（120℉）。
+                            三分熟（Medium-Rare）：外圍呈灰褐色，剖面為絕大部份為血紅色，沒有一分熟的中心寶石紅，核心溫度約52.2℃（126℉）。
+                            五分熟（Medium）：外圍呈灰褐色，剖面為粉紅色，核心仍有血紅色，溫度約57.2℃（135℉）。
+                            七分熟（Medium-Well）：大部分呈灰褐色，核心為粉紅色，溫度約62.8℃（145℉）。
+                            全熟（Well-Done）：表面稍微烤焦，剖面全熟無不見紅，通常西餐廳裡的牛排都會避免全熟，因為肉質硬韌難咬，為口感最差的熟度。由於對這道   菜的特殊要求（全熟並且肉有一些水分）很多廚師都無法把這道菜做到完美。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">種類</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                            牛小排：取自牛的前胸肋骨部位，油脂甚多。
+                            菲力牛排：腰內肉部分牛腰肉（tenderloin），最嫰處切出，是牛脊上的肉，形狀頭大尾小，脂肪含量少，適合三分熟，吸吮甜美的肉汁，肉質鮮嫩，菲力牛排包裹在牛腹腔中，所以肌肉都沒運動到，故肌肉纖維不粗。是牛排中單價最高的。
+                            側腹牛排：自腹側取得。
+                            牛肩膀牛排：牛肩膀部份切出。
+                            烤腹肉牛排：或稱（法式）onglet，從中心附近的膈肌。中間有點硬（sinewy）。通常被稱為「屠夫的牛腰」（butcher's tenderloin）。
+                            紐約客牛排：取牛前腰脊肉（Strip Loin）的部份，大理石油花（Marbling）均勻，肉質與沙朗牛排接近，有嚼勁，是美國人的最愛，故名。
+                            肋眼或肉眼牛排：靠近胸部的肋肌部，肉質鮮嫩，大理石紋多且分布均勻，中心部位有一塊明顯的油花，由於鮮嫩多汁，深受大眾喜愛，售價較高，適合乾烤方式烹調。
+                    </details>
+                </div>
+            </article>
+            <footer>
+                <p style="padding: 10px;">Copyright © 瑛維吧 2020 all right reserved | Powered by NUTC</p>
+            </footer>
+        </div>
+    </body>
+</html>
