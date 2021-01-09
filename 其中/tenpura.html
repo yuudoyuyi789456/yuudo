@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, sinitial-scale=1">
+        <base href="Food.html">
+        <link rel="stylesheet" href="Form.css">
+        <title>天ぷら／てんぷら</title>
+        <script type="text/javascript" src="to_top.js" charset="UTF-8"></script>
+        <script type="text/javascript">
+        window.onload=function()
+        {
+            var oBtn1=document.getElementById("btn1");
+            var content=document.getElementById("navbar");
+            var n=0;
+            oBtn1.onclick=function()
+            {
+                content.style.display= 'none';
+                if(n%2==0)
+                {
+                    oBtn1.style.backgroundColor = 'red';
+                    content.style.display = 'grid';
+                }
+                else
+                {
+                    oBtn1.style.backgroundColor = '#86160c';
+                    content.style.display= 'none';
+                }
+                n++;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <p id="header_p">IN & WA's Bar&#x1F942</p>
+                <nav>
+                    <ul>
+                        <li><a href="main.html">首頁</a></li>
+                    </ul>
+                    <ul class="ul_oc">
+                        <li><a href="Base.html">基酒</a></li>
+                        <li><a href="Cocktail.html">調酒</a></li>
+                        <li><a href="Coffee.html">咖啡</a></li>
+                        <li><a href="Food.html">料理</a></li>
+                    </ul>
+                    <button type="button" id="btn1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </nav>
+            </header>
+            <article>
+                <ul id="navbar" style="position: absolute;top: 0px;right: 0px; background-color: rgba(126, 125, 125, 0.9);display: none;z-index: 2;">
+                    <li><a href="Base.html">基酒</a></li>
+                    <li><a href="Cocktail.html">調酒</a></li>
+                    <li><a href="Coffee.html">咖啡</a></li>
+                    <li><a href="Food.html">料理</a></li>
+                </ul>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">簡介</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        關東天婦羅烹飪時用的是雞蛋和麵粉，海鮮比例高，以芝麻油炸（有時會混進大豆油），油溫不高，需要的時間長。 關西用的是水和麵粉，蔬菜比例高，以熱油炸，時間短；所以關西天婦羅顏色清涼，口味清淡；關東天婦羅則油重色濃得多。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">由來</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        是由16世紀時的葡萄牙傳教士傳入日本，當初是葡萄牙人在大齋期（Lent，天主教節日，指復活節六個半星期以前）期間因禁吃獸肉，只能食用海鮮，而以吃魚代替肉而烹煮的一種食物[1]。其中，拉丁文的「ad tempora quadragesima」就是「守大齋期」的意思。後來在日本逐漸流行起來。傳統的日式天婦羅是用海產或蔬菜裹上澱粉漿（麵粉之類）油炸。
+                        一般的天婦羅是以魚、貝類、蝦或蔬菜等裹以小麥粉與蛋汁，並油炸的日本料理，如炸蝦和炸番薯 。
+                        另一種油炸食品薩摩炸魚餅在近畿關西也稱為てんぷら。台灣日治時代因為來台以西部人較多，故音譯為「甜不辣
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">配方</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                                澱粉漿是用冰水、麵粉、和蛋黃混合而成，廚師會將拌好的粉漿用筷子沾取甩下油鍋做成炸麵衣，測試油溫有無達到標準。揚物做法是將小塊的方便入口的食材先上麵粉，再沾澱粉漿，然後熱油炸約2到3分鐘。常見的炸大蝦天婦羅做法可以是將大蝦剝去外殼（只留尾部），用混合澱粉漿將蝦肉裹好，用油炸熟。  
+                    </details>
+                </div>
+            </article>
+            <footer>
+                <p style="padding: 10px;">Copyright © 瑛維吧 2020 all right reserved | Powered by NUTC</p>
+            </footer>
+        </div>
+    </body>
+</html>
