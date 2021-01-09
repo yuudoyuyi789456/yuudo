@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, sinitial-scale=1">
+        <base href="Food.html">
+        <link rel="stylesheet" href="Form.css">
+        <title>鬆餅</title>
+        <script type="text/javascript" src="to_top.js" charset="UTF-8"></script>
+        <script type="text/javascript">
+        window.onload=function()
+        {
+            var oBtn1=document.getElementById("btn1");
+            var content=document.getElementById("navbar");
+            var n=0;
+            oBtn1.onclick=function()
+            {
+                content.style.display= 'none';
+                if(n%2==0)
+                {
+                    oBtn1.style.backgroundColor = 'red';
+                    content.style.display = 'grid';
+                }
+                else
+                {
+                    oBtn1.style.backgroundColor = '#86160c';
+                    content.style.display= 'none';
+                }
+                n++;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <p id="header_p">IN & WA's Bar&#x1F942</p>
+                <nav>
+                    <ul>
+                        <li><a href="main.html">首頁</a></li>
+                    </ul>
+                    <ul class="ul_oc">
+                        <li><a href="Base.html">基酒</a></li>
+                        <li><a href="Cocktail.html">調酒</a></li>
+                        <li><a href="Coffee.html">咖啡</a></li>
+                        <li><a href="Food.html">料理</a></li>
+                    </ul>
+                    <button type="button" id="btn1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </nav>
+            </header>
+            <article>
+                <ul id="navbar" style="position: absolute;top: 0px;right: 0px; background-color: rgba(126, 125, 125, 0.9);display: none;z-index: 2;">
+                    <li><a href="Base.html">基酒</a></li>
+                    <li><a href="Cocktail.html">調酒</a></li>
+                    <li><a href="Coffee.html">咖啡</a></li>
+                    <li><a href="Food.html">料理</a></li>
+                </ul>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">簡介</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        是起源於日本大阪的料理，作法是在生麵團裡加入章魚腳烤成直徑約3-5公分的丸子。主要是作為非正餐的點心（但在大阪有時會被當正餐來吃）。章魚腳也可替換為小章魚。
+                        章魚燒特點是章魚茸鮮、色白、紅、黑相同，海苔味香，外觀整齊美觀。口味鹹而鮮。
+                        在大阪是用牙籤叉來吃，而東京是用筷子夾，在早期則是用竹串以三個一串的方式處理的。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">製法</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                           將冷水加入麵粉、雞蛋、一小匙醬油作成麵糊，講究者可以熬煮柴魚高湯放冷後代替水加入，再來將章魚腳、青蔥、高麗菜、紅薑切成易於食用的小塊分類放好。再來將章魚燒烤盤預熱，均勻抹上沙拉油再將麵糊倒入，等麵糊外表加熱凝固後，加入切塊的章魚、紅薑、青蔥、高麗菜再補上些許麵糊，等麵糊成半熟狀即可用竹籤將章魚燒翻轉成圓形，等到表皮呈咖啡色時即可上桌。通常章魚燒會擺放在薄木片或餐盒中，上面再抹上章魚燒醬、柴魚片、海苔粉、美乃滋增添風味。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">種類</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                           原味章魚燒
+                            完全不沾醬料，只加美乃滋和柴魚片。最近也有加上果醋和粗鹽作速食之用。
+                           醬汁章魚燒
+                            在章魚燒表面塗上醬料，近年來成為主流。
+                           醬油章魚燒
+                            在章魚燒表面塗上醬油，以名古屋一帶為多。
+                            不管是何種章魚燒，通常會在章魚燒旁邊再附上紅薑解膩。
+                    </details>
+                </div>
+            </article>
+            <footer>
+                <p style="padding: 10px;">Copyright © 瑛維吧 2020 all right reserved | Powered by NUTC</p>
+            </footer>
+        </div>
+    </body>
+</html>
