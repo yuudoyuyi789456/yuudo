@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, sinitial-scale=1">
+        <base href="Food.html">
+        <link rel="stylesheet" href="Form.css">
+        <title>鬆餅</title>
+        <script type="text/javascript" src="to_top.js" charset="UTF-8"></script>
+        <script type="text/javascript">
+        window.onload=function()
+        {
+            var oBtn1=document.getElementById("btn1");
+            var content=document.getElementById("navbar");
+            var n=0;
+            oBtn1.onclick=function()
+            {
+                content.style.display= 'none';
+                if(n%2==0)
+                {
+                    oBtn1.style.backgroundColor = 'red';
+                    content.style.display = 'grid';
+                }
+                else
+                {
+                    oBtn1.style.backgroundColor = '#86160c';
+                    content.style.display= 'none';
+                }
+                n++;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <p id="header_p">IN & WA's Bar&#x1F942</p>
+                <nav>
+                    <ul>
+                        <li><a href="main.html">首頁</a></li>
+                    </ul>
+                    <ul class="ul_oc">
+                        <li><a href="Base.html">基酒</a></li>
+                        <li><a href="Cocktail.html">調酒</a></li>
+                        <li><a href="Coffee.html">咖啡</a></li>
+                        <li><a href="Food.html">料理</a></li>
+                    </ul>
+                    <button type="button" id="btn1">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                </nav>
+            </header>
+            <article>
+                <ul id="navbar" style="position: absolute;top: 0px;right: 0px; background-color: rgba(126, 125, 125, 0.9);display: none;z-index: 2;">
+                    <li><a href="Base.html">基酒</a></li>
+                    <li><a href="Cocktail.html">調酒</a></li>
+                    <li><a href="Coffee.html">咖啡</a></li>
+                    <li><a href="Food.html">料理</a></li>
+                </ul>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">簡介</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                        在紐西蘭等大英國協國家也稱其為Picklete；是一種以麵糊在烤盤或平底鍋上烹飪製成的薄扁狀餅。薄烤餅多為速發麵包，有的則使用酵母培育或發酵的麵糊。大部分的薄烤餅是以烤盤單面煎烤，接著翻面使另一面適度受熱。可麗餅則是一種極度細薄且面積較大的薄烤餅，單面煎烤後捲起、裝餡。各國家、地區的風俗習慣不同，任何時間皆會供應薄烤餅，且口味變化多樣，常於上層塗放、填塞奶油、果醬、水果、糖漿或肉食等配料及餡料。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">製法</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                           以雞蛋、砂糖、麵粉、泡打粉、淡奶攪成蛋漿，在烤盤刷上少許的油，倒入麵糊在下方烤盤凹陷處，並將上面的凸狀蓋子蓋下，把麵糊壓出格子來，再放在爐火上烤製而成，最後配上不同食材或醬料即可。近年來有用電的烤盤，方便不少人。
+                    </details>
+                </div>
+                <div style="border: 2px solid;border-radius: 10px;text-align: justify;font-size: 20px;">
+                    <details open><summary id="sm_style">種類</summary><hr style="block-size: 3px;background-color: black;">
+                        <br>
+                            美式鬆餅（英語：Pancake），任何台灣的美式早餐店都能見到的普通鬆餅，在台灣麥當勞也能以50元台幣買到，一般台灣人說的鬆餅就是指這個。
+                            英式鬆餅（英語：Scone），又叫司康、英國茶餅，是配合英國下午茶的鬆餅，裡面有大量奶油。
+                            比利時鬆餅（英語：Waffle），一種有格子狀表面的餅，又叫做華夫餅。
+                            荷式鬆餅（荷蘭語：Stroopwafels），又稱為荷蘭華夫餅。
+                            德式鬆餅（英語：Dutch baby pancakes，German pancake），又稱為荷蘭寶貝鬆餅，是一道從德國傳到荷蘭、再傳到美國的主食兼甜點。
+                            瑪芬（英語：Muffin）
+                            酥皮（英語：Puff pastry），具有千層片狀結構的麵食。
+                            松片（韓語：송편），一種以糯米製成的朝鮮傳統食品。
+                    </details>
+                </div>
+            </article>
+            <footer>
+                <p style="padding: 10px;">Copyright © 瑛維吧 2020 all right reserved | Powered by NUTC</p>
+            </footer>
+        </div>
+    </body>
+</html>
